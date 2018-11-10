@@ -12,9 +12,7 @@ services:
       - go.env
       - jwt.env
       - mongo.env
-  
   mongo:
     image: mongo:3.7
-
 volumes:
   phonebook-mongo:
