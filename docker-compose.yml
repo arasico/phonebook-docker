@@ -1,0 +1,20 @@
+version: "3"
+services:  
+  go:
+    image: yaser/phonebook-go
+    volumes:
+      - /home/yaser/projects/go/src/phonebook-script:/phonebook-script
+    ports:
+      - 5050:5050
+    depends_on:
+      - mongo
+    env_file:
+      - go.env
+      - jwt.env
+      - mongo.env
+  
+  mongo:
+    image: mongo:3.7
+
+volumes:
+  phonebook-mongo:
