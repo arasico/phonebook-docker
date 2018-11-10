@@ -3,7 +3,7 @@ services:
   go:
     image: yaser/phonebook-go
     volumes:
-      - /home/yaser/projects/go/src/phonebook-script:/phonebook-script
+      - /home/yaser/projects/go/src/phonebook-script:/go/src/phonebook-script
     ports:
       - 5050:5050
     depends_on:
