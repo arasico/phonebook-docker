@@ -1,7 +1,7 @@
 version: "3"
 services:
   go:
-    image: yaser/phonebook-go
+    image: yaserdarzi/phonebookgo
     ports:
     - 5050:5050
     depends_on:
